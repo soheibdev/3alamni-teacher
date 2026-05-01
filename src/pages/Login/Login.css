@@ -1,0 +1,130 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-header h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.login-header h2 {
+  font-size: 24px;
+  color: var(--color-ink);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.form-group input {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  font-family: var(--font-body);
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: var(--color-mint);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding-right: 44px;
+}
+.input-with-icon input::placeholder {
+  padding-right: 20px;
+ 
+}
+
+
+.input-icon {
+  position: absolute;
+  right: 10px; 
+  color: #999;
+  pointer-events: none;
+}
+
+.login-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFF0F3;
+  color: var(--color-coral);
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  border: 1px solid #FFD0DA;
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+.login-hint {
+  margin-top: 24px;
+  text-align: center;
+  padding: 12px;
+  background: var(--color-bg);
+  border-radius: 12px;
+}
+
+.login-hint p {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.login-hint code {
+  font-size: 13px;
+  color: var(--color-mint);
+  font-weight: 600;
+  direction: ltr;
+  display: inline-block;
+}

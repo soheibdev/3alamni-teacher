@@ -1,0 +1,107 @@
+.stories-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.story-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.story-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(43, 29, 74, 0.08);
+}
+
+.story-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.story-title {
+  font-size: 20px;
+  color: var(--color-ink);
+  margin-bottom: 12px;
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.story-moral {
+  background-color: var(--color-bg);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.moral-label {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.story-meta-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+.story-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #888;
+  background-color: #f8f9fa;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.story-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-sky);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.story-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Reusable Modal Styles (Shared with Meetings) */
+.modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; z-index: 1000; backdrop-filter: blur(4px); }
+.modal-card { width: 100%; max-width: 500px; padding: 32px; animation: slideUp 0.3s ease; max-height: 90vh; overflow-y: auto; }
+.modal-card h3 { font-size: 22px; color: var(--color-ink); margin-bottom: 24px; font-family: var(--font-body); font-weight: 700; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.modal-form { display: flex; flex-direction: column; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; text-align: right; }
+.form-group label { font-weight: 600; font-size: 14px; color: var(--color-ink); }
+.form-group input, .form-group select, .form-group textarea { padding: 10px 14px; border-radius: 12px; border: 1px solid var(--color-border); font-family: var(--font-body); font-size: 15px; outline: none; transition: border-color 0.2s; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--color-mint); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.modal-actions { display: flex; gap: 12px; margin-top: 8px; }

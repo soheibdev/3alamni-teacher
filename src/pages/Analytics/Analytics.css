@@ -1,0 +1,19 @@
+.analytics-page { display: flex; flex-direction: column; gap: 24px; }
+.analytics-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.analytics-kpi { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 20px; gap: 8px; transition: transform 0.2s; }
+.analytics-kpi:hover { transform: translateY(-2px); }
+.kpi-val { font-family: var(--font-display); font-size: 28px; color: var(--color-ink); }
+.kpi-lbl { font-size: 14px; color: #888; font-weight: 600; }
+
+.analytics-charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.analytics-bottom-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; }
+.analytics-chart-card { padding: 24px; }
+.analytics-chart-card h3 { font-size: 18px; color: var(--color-ink); margin-bottom: 16px; font-family: var(--font-body); font-weight: 700; }
+
+.leaderboard { display: flex; flex-direction: column; gap: 12px; }
+.leaderboard-row { display: flex; align-items: center; gap: 12px; }
+.lb-rank { width: 24px; height: 24px; border-radius: 50%; background: var(--color-bg); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: var(--color-ink); }
+.lb-name { font-weight: 600; color: var(--color-ink); min-width: 100px; }
+.lb-bar-wrapper { flex: 1; height: 8px; background: var(--color-bg); border-radius: 20px; overflow: hidden; }
+.lb-bar { height: 100%; background: linear-gradient(90deg, var(--color-mint), var(--color-sky)); border-radius: 20px; transition: width 0.6s ease; }
+.lb-score { font-weight: 700; color: var(--color-mint); min-width: 45px; text-align: left; }

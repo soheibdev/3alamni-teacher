@@ -1,0 +1,285 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header h2 {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.header p {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.mainCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sideCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.kpiCard {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.kpiIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.kpiInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.kpiValue {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--color-ink);
+  line-height: 1;
+}
+
+.kpiLabel {
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
+}
+
+/* Background Utility Classes */
+.bgMint { background-color: var(--color-mint); color: var(--color-white); }
+.bgCoral { background-color: var(--color-coral); color: var(--color-white); }
+.bgSunny { background-color: var(--color-sunny); color: var(--color-white); }
+.bgGrape { background-color: var(--color-grape); color: var(--color-white); }
+
+.bgmint { background-color: var(--color-mint); color: var(--color-white); }
+.bgcoral { background-color: var(--color-coral); color: var(--color-white); }
+.bgsunny { background-color: var(--color-sunny); color: var(--color-ink); }
+
+.linemint { border-right: 3px solid var(--color-mint); }
+.linecoral { border-right: 3px solid var(--color-coral); }
+.linesunny { border-right: 3px solid var(--color-sunny); }
+
+.cardHeader h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-ink);
+}
+
+.cardHeader p {
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
+}
+
+.chartCard {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.chartWrapper {
+  margin-top: 1rem;
+}
+
+.studentsCard {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.cardHeaderFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cardHeaderFlex h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.link {
+  color: var(--color-mint);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.studentList {
+  display: flex;
+  flex-direction: column;
+}
+
+.studentRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.studentRow:last-child {
+  border-bottom: none;
+}
+
+.studentIdentify {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.studentAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.studentName {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.studentWeakness {
+  flex: 1;
+  text-align: center;
+  color: var(--color-gray-500);
+  font-size: 0.9rem;
+}
+
+.studentWeakness strong {
+  color: var(--color-ink);
+}
+
+.studentProgress {
+  font-weight: 700;
+  color: var(--color-ink);
+  width: 50px;
+  text-align: left;
+}
+
+.aiCard {
+  background: rgba(185, 140, 255, 0.1); /* Light Grape */
+  border: 1px solid var(--color-grape);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.aiHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-grape);
+  margin-bottom: 1rem;
+}
+
+.aiHeader h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.aiCard p {
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.aiButton {
+  width: 100%;
+  background: var(--color-grape);
+  color: var(--color-white);
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.aiButton:hover {
+  opacity: 0.9;
+}
+
+.scheduleCard {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.scheduleCard h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-ink);
+  margin-bottom: 1.5rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.time {
+  color: var(--color-gray-400);
+  font-size: 0.85rem;
+  width: 40px;
+  text-align: right;
+  padding-top: 0.25rem;
+}
+
+.timelineLine {
+  margin-right: 0.5rem;
+}
+
+.timelineContent {
+  font-weight: 600;
+  color: var(--color-ink);
+  padding-top: 0.1rem;
+}

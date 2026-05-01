@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header h2 {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.header p {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 1.25rem 1rem;
+  text-align: right;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.table th {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-500);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-sky);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.progressBar {
+  width: 100px;
+  height: 8px;
+  background-color: var(--color-gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
+.actionBtn {
+  background-color: var(--color-gray-100);
+  color: var(--color-ink);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.messageBtn {
+  background-color: rgba(185, 140, 255, 0.1);
+  color: var(--color-grape);
+}

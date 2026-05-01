@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Lalezar&display=swap');
+
+:root {
+  /* Candy Pop Colors */
+  --color-mango: #FF8A3D;
+  --color-mint: #3DD1C8;
+  --color-coral: #FF6F91;
+  --color-sky: #6EC5FF;
+  --color-sunny: #FFD166;
+  --color-grape: #B98CFF;
+  --color-cream: #FFF4E0;
+  --color-ink: #2B1D4A;
+  
+  --color-bg: #F8F9FA;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8F0;
+
+  --font-display: 'Lalezar', system-ui, sans-serif;
+  --font-body: 'Cairo', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  direction: rtl;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+/* Utilities */
+.text-mango { color: var(--color-mango); }
+.text-mint { color: var(--color-mint); }
+.text-coral { color: var(--color-coral); }
+.text-sky { color: var(--color-sky); }
+.text-ink { color: var(--color-ink); }
+.text-grape { color: var(--color-grape); }
+
+.bg-mango { background-color: var(--color-mango); }
+.bg-mint { background-color: var(--color-mint); }
+.bg-coral { background-color: var(--color-coral); }
+.bg-sky { background-color: var(--color-sky); }
+.bg-cream { background-color: var(--color-cream); }
+.bg-grape { background-color: var(--color-grape); }
+
+.card {
+  background: var(--color-surface);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(43, 29, 74, 0.05);
+  border: 2px solid var(--color-border);
+}

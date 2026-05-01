@@ -1,0 +1,135 @@
+.lessons-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lesson-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lesson-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(43, 29, 74, 0.08);
+}
+
+.lesson-card-header {
+  width: 100%;
+}
+
+.lesson-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lesson-title {
+  font-size: 18px;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.lesson-meta {
+  font-size: 13px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-completed {
+  background-color: #E6FAF8;
+  color: var(--color-mint);
+}
+
+.status-current {
+  background-color: #FFF0F3;
+  color: var(--color-coral);
+}
+
+.status-upcoming {
+  background-color: #EBF5FF;
+  color: var(--color-sky);
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #888;
+}
+
+.action-btn:hover {
+  background-color: var(--color-bg);
+}
+
+.delete-btn:hover {
+  background-color: #FFF0F3;
+  color: var(--color-coral);
+}
+
+.edit-btn:hover {
+  color: var(--color-sky);
+}
+
+/* Expanded lesson details */
+.lesson-details {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lesson-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.detail-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #999;
+}
+
+/* Reusable Modal Styles */
+.modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; z-index: 1000; backdrop-filter: blur(4px); }
+.modal-card { width: 100%; max-width: 500px; padding: 32px; animation: slideUp 0.3s ease; max-height: 90vh; overflow-y: auto; }
+.modal-card h3 { font-size: 22px; color: var(--color-ink); margin-bottom: 24px; font-family: var(--font-body); font-weight: 700; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.modal-form { display: flex; flex-direction: column; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; text-align: right; }
+.form-group label { font-weight: 600; font-size: 14px; color: var(--color-ink); }
+.form-group input, .form-group select, .form-group textarea { padding: 10px 14px; border-radius: 12px; border: 1px solid var(--color-border); font-family: var(--font-body); font-size: 15px; outline: none; transition: border-color 0.2s; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--color-mint); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.modal-actions { display: flex; gap: 12px; margin-top: 8px; }
