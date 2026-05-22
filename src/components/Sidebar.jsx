@@ -20,10 +20,7 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <div className="logo-icon-wrapper">
-          <GraduationCap size={28} className="text-mango" />
-        </div>
-        <h1 className="text-mango">عَلِّمْني</h1>
+        <img src="/logo.png" alt="علّمني" className="sidebar-logo-img" />
         <p className="text-ink">واجهة المُعَلِّم</p>
       </div>
 

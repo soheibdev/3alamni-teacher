@@ -16,11 +16,10 @@
   margin-bottom: 32px;
 }
 
-.logo-icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4px;
+.sidebar-logo-img {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 8px;
 }
 
 .sidebar-logo h1 {

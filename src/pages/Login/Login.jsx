@@ -33,7 +33,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-card card">
         <div className="login-header">
-          <h1 className="text-mango">عَلِّمْني</h1>
+          <img src="/logo.png" alt="علّمني" className="login-logo-img" />
           <h2>تسجيل دخول المعلم</h2>
         </div>
         

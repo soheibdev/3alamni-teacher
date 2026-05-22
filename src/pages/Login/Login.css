@@ -26,6 +26,12 @@
   color: var(--color-ink);
 }
 
+.login-logo-img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 16px;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
